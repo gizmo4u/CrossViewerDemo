@@ -1,0 +1,24 @@
+<!doctype html><html><head><meta charset="UTF-8"><title>CROSS VIEWER</title><script src="https://code.jquery.com/jquery-3.5.1.min.js"></script><script>$(function() {
+        $("#viewerDiv").load("./viewer.html");  
+
+        $("#test1").click(function() {
+          alert("click test1");
+          window.fnLoadImageValue("https://www.bizforms.co.kr/form_openpreview/form_187347_1.jpg");
+        });
+        $("#test2").click(function() {
+          alert("click test2");
+          window.window.fnPositionMasking("100,200,200,20");
+        });
+        $("#test3").click(function() {
+          alert("click test3");
+          window.fnMoveToMasking(1);
+        });
+        $("#test4").click(function() {
+          alert("click test4");
+          window.fnClear();
+        });
+        $("#test5").click(function() {
+          self.close();
+        });
+
+      });</script><link rel="icon" href="./dist/favicon.ico?75fe7d5402b11b145b72"></head><body><button id="test1" type="button">이미지로드</button> <button id="test2" type="button">마스킹추가</button> <button id="test3" type="button">마스킹이동</button> <button id="test4" type="button">마스킹초기화</button> <button id="test5" type="button">창닫기</button><div id="viewerDiv"></div><script src="./dist/crossviewer-vendor.js?75fe7d5402b11b145b72"></script><script src="./dist/crossviewer-main.js?75fe7d5402b11b145b72"></script></body></html>
